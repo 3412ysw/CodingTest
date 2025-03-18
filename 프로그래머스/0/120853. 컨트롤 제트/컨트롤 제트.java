@@ -4,14 +4,13 @@ class Solution {
         
         String[] list =  s.split(" ");
         
-        for(int i=0; i<list.length; i++) {
-            if(!list[i].equals("Z")) {
-                answer += Integer.parseInt(list[i]);
-            }else{
-                answer -= Integer.parseInt(list[i-1]);   
+        for(int i = 0 ; i<list.length; i++){
+            char str = 
+            if(str >= '0' && str <= '9'){
+               str-'0';
             }
         }
         
-        return answer;
+        return list;
     }
 }
